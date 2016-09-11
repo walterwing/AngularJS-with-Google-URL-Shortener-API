@@ -1,0 +1,35 @@
+<div class="container" ng-controller="ShortenerController">
+	
+	<div class="align-center">
+		<div>
+			<div class="input-group">
+				<input type="text" class="form-control" ng-model="urlDetails.longUrl" placeholder="Your original URL here...">
+				<span class="input-group-btn">
+					<button class="btn btn-default" ng-click="invokeShorten(urlDetails.longUrl)" type="button">SHORTEN</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<br />
+	
+	<div class="jumbotron text-center" ng-hide="!urlDetails.shortUrl">
+		<div class="align-center">
+			<h2>Have fun!</h2>
+			
+			<div class="input-group">
+				<input id="shortUrlDisplay" type="text" class="form-control" ng-model="urlDetails.shortUrl" readonly>
+				<div class="input-group-btn">
+					<button class="btn btn-default" ng-click="copyUrl()" type="button">COPY</button>
+					<button class="btn btn-default" ng-click="openUrl()" type="button">OPEN</button>
+				</div>
+			</div>
+			
+			<div ng-hide="urlDetails.signed">
+				<h3>Want to create your own URL? Sign in now!</h3>
+				<p><a class="btn btn-primary btn-lg" ng-click="signIn()" role="button">Sign In</a></p>
+			</div>
+		</div>
+	</div>
+	
+</div>

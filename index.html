@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wing URL Shortener Demo</title>
+    
+	<!-- Bootstrap depends on JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+	
+	<!-- Bootstrap Optional theme -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css">
+	
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/demo.css">
+
+</head>
+<body>
+
+	<header ng-include="'app/navbar/navbar.html'" role="banner"></header>
+	
+    <div class="container-fluid">
+    	<div ng-view></div>
+    </div>
+    
+    <footer class="central-footer">
+		<p>&copy; Wing.com 2016</p>
+	</footer>
+    
+    <!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	
+	<script src="js/demo.app.js"></script>
+	<script src="app/navbar/navbar.controller.js"></script> 
+	<script src="app/home/home.controller.js"></script>
+	<script src="app/history/history.controller.js"></script>
+	<script src="app/shortener/shortener.service.js"></script>
+	<script src="app/shortener/shortener.controller.js"></script> 
+	<script src="app/shortener/shortener.directive.js"></script>
+	
+	<script src="https://apis.google.com/js/api.js?onload=handleClientLoad"></script>
+	
+	
+</body>
+</html>

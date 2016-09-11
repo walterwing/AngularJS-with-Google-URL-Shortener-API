@@ -1,0 +1,34 @@
+<div class="container-fluid">
+
+	<div ng-if="urlDetails.signed === false" class="text-center">
+		<h3>Please sign in first</h3>
+		<p><a class="btn btn-primary btn-lg" ng-click="signIn()" role="button">Sign In</a></p>
+	</div>
+
+	<div ng-if="urlDetails.signed === true">
+		<h1 class="text-center">Your URL History</h1>
+		<div class="panel panel-default">
+			<table class="table" ng-init="loadHistory()">
+				<thead>
+					<tr>
+					<th>Original URL</th>
+					<th>Created</th>
+					<th>Short URL</th>
+					<th>All Clicks</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr ng-repeat="history in urlHistory">
+						<td>{{history.originalUrl}}</td>
+						<td>{{history.created | date:'MM/dd/yyyy @ h:mma'}}</td>
+						<td>{{history.shortUrl}}</td>
+						<td>{{history.allClicks}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</div>
