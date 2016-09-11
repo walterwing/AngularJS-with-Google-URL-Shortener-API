@@ -30,12 +30,12 @@ function handleClientLoad() {
 	})
 	.config(['urlShortenerProvider', function(urlShortenerProvider) {
 		// Enter an API key from the Google API Console:
-		urlShortenerProvider.setApiKey('AIzaSyCq5fBz2eo3gBgCpVM_-CUu4OClLEe48ow');
+		urlShortenerProvider.setApiKey('******');
 		
 		// Enter a client ID for a web application from the Google API Console:
 	    // In your API Console project, add a JavaScript origin that corresponds
 	    //   to the domain where you will be running the script.
-		urlShortenerProvider.setClientId('961267305482-1jn71d0srltfk93l8gsin5pv1mib99ak.apps.googleusercontent.com');
+		urlShortenerProvider.setClientId('******');
 		
 		// Enter one or more authorization scopes. Refer to the documentation for
 	    // the API or https://developers.google.com/identity/protocols/googlescopes
