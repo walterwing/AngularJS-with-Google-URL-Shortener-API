@@ -9,5 +9,10 @@ https://developers.google.com/apis-explorer/#p/urlshortener/v1/
 
 This application does not reply on any other server or service except Google Shortener API.
 
+
+Detailed Introduction with screenshots
+
+Please refer to the ReadMe.docx file.
+
 # Note
 If you want to use or customize this application, you will need to fill in your own API key and client ID in js/demo.app.js
